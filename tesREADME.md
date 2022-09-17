@@ -134,9 +134,3 @@ Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat
 ## Kesimpulan
 Dengan menerapkan beberapa metode, dari ketiga model yang telah diuji, Random Forest 
 merupakan model yang memiliki error paling rendah dan mampu memprediksi kualitas dari susu dengan tepat. Tujuan dari proyek dalam mengatasi permasalahan yang telah disebutkan telah dapat tercapai.
-
-## Referensi
-[1]Setyorini. D.A, DKK. (2020). Kualitas dan Kuantitas Produksi Susu Sapi di Kemitraan PT. Greenfields Indonesia Ditinjau dari Ketinggian Tempat
-https://doi.org/10.31186/jspi.id.15.4.426-
-
-<div class="csl-entry">[1] Ernawati, S., &#38; Setyorini. D.A. DKK. (2018). <i>ualitas dan Kuantitas Produksi Susu Sapi di Kemitraan PT. Greenfields Indonesia Ditinjau dari Ketinggian Tempat</i>. https://ejournal.unib.ac.id/index.php/jspi/article/view/12295</div>
