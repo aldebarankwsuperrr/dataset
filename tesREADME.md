@@ -115,9 +115,9 @@ Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error predi
 <br>![formula](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/formula.jpeg)<br>
 
 Keterangan :
-N = jumlah dataset
-yi = nilai sebenarnya
-y_pred = nilai prediksi
+N = jumlah dataset <br>
+yi = nilai sebenarnya <br>
+y_pred = nilai prediksi <br>
 
 Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
 
