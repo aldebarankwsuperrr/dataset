@@ -114,13 +114,19 @@ Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error predi
 
 <br>![formula](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/formula.jpeg)<br>
 
-Keterangan :
+Keterangan : <br>
 N = jumlah dataset <br>
 yi = nilai sebenarnya <br>
 y_pred = nilai prediksi <br>
 
 Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
-
+<br>
+|index|train|test|
+|---|---|---|
+|KNN|7\.157360406091371e-06|3\.2323232323232307e-06|
+|RF|1\.3705583756345178e-06|8\.080808080808077e-07|
+|Boosting|0\.00010281880689258982|0\.00010079586025386464|
+<br>
 <br>![evaluation](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/eval.png)<br>
 
-
+Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat diuji dengan data test. Dari diagram tersebut dapat dilihat bahwa Random Forest memiliki error paling rendah, baik pada training set maupun test set. Maka Random Forest akan digunkan pada project ini dalam menentukan kualitas dari susu berdasarkan fitur pH, Temprature, dan lain-lain.
