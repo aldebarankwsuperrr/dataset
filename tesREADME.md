@@ -27,5 +27,5 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Temperature : Temperatur dari susu, variabel berisi nilai variatif diambil berdasarkan sampel
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
-![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)
+![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
 Pada gambar diatas dapat dilihat bahwa dataset memiliki persebaran data yang cukup seimbang pada setiap nilai target, sehingga dataset dapat digunakan.
