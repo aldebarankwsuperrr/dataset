@@ -110,7 +110,12 @@ AdaBoost merupakan salah satu algoritma machine learning yang bekerja dengan car
 Setelah parameter setiap model didapat, maka akan dilakukan pelatihan ketiga model menggunakan parameter yang didapat menggunakan Grid Search.
 
 ## Evaluation
-Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error prediksi kualitas susu dari model dengan kualitas susu sesuai data. Mean square error bekerja dengan menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
+Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error prediksi kualitas susu dari model dengan kualitas susu sesuai data. Mean square error bekerja dengan menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Berikut formula dari mean square error
+
+<br>![formula](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/formula.jpeg)<br>
+
+
+Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
 
 <br>![evaluation](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/eval.png)<br>
 
