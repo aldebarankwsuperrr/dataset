@@ -10,8 +10,8 @@ Refrensi  : [Kualitas dan Kuantitas Produksi Susu Sapi di Kemitraan PT. Greenfie
 
 ## Business Understanding
 Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi kualitas susu juga dapat membuat kekeliruan dalam menentukan harga jual susu. Susu dengan kualitas tinggi tentu memiliki harga jual lebih tinggi dibandingkan dengan susu dengan kualitas buruk. Dari pernyataan tersebut, dapat ditarik kesimpulan bahwa permasalahan utama dapat dinyatakan dengan sebuah pertanyaan-pertanyaan berikut:
-- Apa kualitas sebuah susu berdasarkan fitur-fitur tertentu.
-- Bagaimana cara membuat model machine learning dengan akurasi tinggi dalam mengidentifikasi kualitas susu berdasarkan fitur-fitur tertentu.
+- Apa kualitas sebuah susu berdasarkan fitur-fitur tertentu?
+- Bagaimana cara membuat model machine learning dengan akurasi tinggi dalam mengidentifikasi kualitas susu berdasarkan fitur-fitur tertentu?
 
 Dalam menyelesaikan permasalahan tersebut, dibuatlah sebuah predictive model dengan tujuan unntuk mengetahui kualitas susu berdasarkan fitur-fitur tertentu dengan menggunakan <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> dataset </a> dengan jumlah sampel 1059 data. Dalam membuat model machine learning, akan digunakan 3 model berbeda dengan menerapkan hyperparameter tuning pada setiap modelnya, kemudian akurasi pada tiap model akan diukur menggunakan  metode mean square error, model dengan error paling rendah akan diambil sebagai model utama.
 
@@ -27,5 +27,7 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Temperature : Temperatur dari susu, variabel berisi nilai variatif diambil berdasarkan sampel
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
+untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
+![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
 ![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
 Pada gambar diatas dapat dilihat bahwa dataset memiliki persebaran data yang cukup seimbang pada setiap nilai target, sehingga dataset dapat digunakan.
