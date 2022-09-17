@@ -63,5 +63,8 @@ Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiap
  ## Modeling
  Proyek ini memiliki fokus permasalahan pada indentifikasi kualitas susu, permasalah tersebut dalam machine learning digolongkan pada permasalah klasifikasi. Beberapa algoritma yang dapat dipakai yaitu KNN, Random Forest, dan AdaBoost. Selain itu untuk memaksimalkan hasil yang didapat, maka akan dilakukan hyperparameter tuning pada setiap model yang akan diuji.
 
-### Model KNN
+### Pemodelan KNN
+KNN merupakan algoritma machine learning yang bekerja dengan mencari "kesamaan fitur" dalam melakukan prediksi. berikut penjelasan kelebihan dan kekurangan dari KNN:
+
+#### Kelebihan :
 
