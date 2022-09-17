@@ -49,11 +49,19 @@ dari gambar tersebut dapat ditarik beberapa hal:
 - variasi nilai pada fitur-fitur dataset tidak terdapat nilai yang "rancu", sehingga kita dapat simpulkan tidak terdapat missing value pada dataset.
 
 Untuk menangani outliers pada dataset kita dapat melakukan beberapa hal. Jika data yang outliers memiliki presentase kecil terhadap data, maka kita dapat menghilangkan saja data tersebut, agar model dapat memiliki akurasi yang tinggi. Seperti yang kita ketahui pada pemeriksaan fitur numerik, terdapat beberapa fitur memiliki outliers dengan presentase terhadap dataset sangat kecil, sehingga akan dilakukan penghapusan pada data tersebut.
+
 ## Data Preparation
+
 Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiapkan sedimikian rupa. Ada beberapa metode yang dapat digunakan dalam tahap data preparation, metode yang akan digunakan dalam data preparation dalam proyek ini yaitu:
 - encoding pada label 
   hal ini karena label memiliki tiga nilai yaitu low, medium, dan high. Hal ini dilakukan agar model dapat dengan mudah melakukan prediksi.
 - Pembagian dataset dengan menggunakan train_test_split
   train_test_split merupakan fungsi dari library scikit-learn yang memiliki fitur untuk membagi data kedalam train data dan test data. Pembagian data ini diperlukan     agar model dapat diukur akurasinya.
+- Standarisasi
+  Standarisasi merupakan kegiatan merubah nilai pada dataset sehigga pada range tertentu. Range yang besar antar nilai pada dataset dapat menyulitkan model dalam mempelajari pada dataset. Fitur-fitur yang akan di-standarisasi yaitu pH, Temprature, dan Colour. Untuk fitur-fitur lain tidak dilakukan standirisasi karena nilainya 1 dan 0.
  
+ ## Modeling
+ Proyek ini memiliki fokus permasalahan pada indentifikasi kualitas susu, permasalah tersebut dalam machine learning digolongkan pada permasalah klasifikasi. Beberapa algoritma yang dapat dipakai yaitu KNN, Random Forest, dan AdaBoost. Selain itu untuk memaksimalkan hasil yang didapat, maka akan dilakukan hyperparameter tuning pada setiap model yang akan diuji.
+
+### Model KNN
 
