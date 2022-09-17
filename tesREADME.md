@@ -28,7 +28,8 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
 untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
-
 ![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
+
+Syarat dari dataset yang baik untuk digunakan dalam pembuatan model machine learning salah satunya haruslah seimbang. Salah satu cara memeriksa apakah dataset kita seimbang atau tidak adalah dengan melakukan visualisasi. Berikut visualiasi dari dataset susu yang akan digunakan pada pembuatan model machine learning proyek ini.<br>
 ![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
 Pada gambar diatas dapat dilihat bahwa dataset memiliki persebaran data yang cukup seimbang pada setiap nilai target, sehingga dataset dapat digunakan.
