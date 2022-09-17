@@ -67,4 +67,11 @@ Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiap
 KNN merupakan algoritma machine learning yang bekerja dengan mencari "kesamaan fitur" dalam melakukan prediksi. berikut penjelasan kelebihan dan kekurangan dari KNN:
 
 #### Kelebihan :
+- memiliki bentuk yang sederhana
+- mudah diimplementasikan
 
+#### Kekurangan :
+- tidak cocok untuk dataset besar
+
+#### Parameter :
+- n_neighbors = merupakan jumlah "tetangga" terdekat yang akan diklasifikasikan dalam satu kelompok. Diantara (5, 10, 15) menggunakan metode GridSearch didapat bahwa nilai terbaik untuk parameter ini adalah 5.
