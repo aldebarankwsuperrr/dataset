@@ -75,3 +75,43 @@ KNN merupakan algoritma machine learning yang bekerja dengan mencari "kesamaan f
 
 #### Parameter :
 - n_neighbors = merupakan jumlah "tetangga" terdekat yang akan diklasifikasikan dalam satu kelompok. Diantara (5, 10, 15) menggunakan metode GridSearch didapat bahwa nilai terbaik untuk parameter ini adalah 5.
+
+### Pemodelan Random Forest
+Random merupakan algoritma machine learning yang bekerja dengan menggabungkan beberapa Decision Tree dalam melakukan prediksi.  berikut penjelasan kelebihan dan kekurangan dari Random Forest:
+
+#### Kelebihan :
+- ampuh dalam mengatasi noise 
+- mampu mengatasi missing value
+- dapat digunakan dalam data besar
+
+#### Kekurangan :
+- membutuhkan tuning parameter yang tepat agar akurasi yang diharapkan dapat tercapai
+
+#### Parameter :
+- n_estimator = jumlah decision tree. Diantara (5, 10, 15) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 15.
+- max_depth = panjang decisoing tree dalam membentuk node. Diantara (10, 16, 20) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 10.
+- random_state = untuk mengatur random number generator. Diantara (45, 55, 65) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 55.
+- n_jobs = jumlah pekerjaan yang berjalan dengan paralel. Diantara (1, 2, 3) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 1.
+
+### Pemodelan AdaBoost 
+AdaBoost merupakan salah satu algoritma machine learning yang bekerja dengan cara "memperbaiki diri". Berikut penjelasan kelebihan dan kekurangan dari AdaBoost :
+
+#### Kelebihan :
+- mudah diimplementasikan
+- relatif cepat dalam pengujian
+
+#### Kekurangan :
+- membutuhkan dataset dengan akurasi tinggi
+
+#### Parameter :
+- learning_rate = weight pada setiap regressor tiap iterasi. Diantara (0.5, 0.05, 0.005) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 0.5.
+- random_state = untuk mengatur random number generator. Diantara (5, 55, 555) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 5.
+
+Setelah parameter setiap model didapat, maka akan dilakukan pelatihan ketiga model menggunakan parameter yang didapat menggunakan Grid Search.
+
+## Evaluation
+Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error prediksi kualitas susu dari model dengan kualitas susu sesuai data. Mean square error bekerja dengan menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
+
+<br>![evaluation](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/eval.png)<br>
+
+
