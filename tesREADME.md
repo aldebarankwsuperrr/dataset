@@ -28,6 +28,7 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
 untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
+
 ![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
 ![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
 Pada gambar diatas dapat dilihat bahwa dataset memiliki persebaran data yang cukup seimbang pada setiap nilai target, sehingga dataset dapat digunakan.
