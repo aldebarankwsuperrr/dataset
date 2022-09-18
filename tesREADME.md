@@ -6,8 +6,6 @@ Susu merupakan salah satu bahan makanan tertua di dunia. Sejak 8.000 tahun sebel
 
 Oleh karena itu diperlukan adanya sebuah pengklasifikasian yang dapat membedakan antara susu yang baik dan layak dikonsumsi dengan susu yang mengalami kerusakan dan tidak layak dikonsumsi. Kualitas susu dapat diidentifikasi dari berbagai macam hal, mulai dari pH, temperatur, warna, dan lain-lain. Pada proyek ini akan dibuat sebuah model machine learning yang dapat mendeteksi kualitas susu berdasarkan dataset susu yang dapat dikunjungi <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> disini </a>.
 
-Refrensi  : [Kualitas dan Kuantitas Produksi Susu Sapi di Kemitraan PT. Greenfields Indonesia Ditinjau dari Ketinggian Tempat](https://ejournal.unib.ac.id/index.php/jspi/article/view/12295)
-
 ## Business Understanding
 Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi kualitas susu juga dapat membuat kekeliruan dalam menentukan harga jual susu. Susu dengan kualitas tinggi tentu memiliki harga jual lebih tinggi dibandingkan dengan susu dengan kualitas buruk. Dari pernyataan tersebut, dapat ditarik kesimpulan bahwa permasalahan utama dapat dinyatakan dengan sebuah pertanyaan-pertanyaan berikut:
 - Apa kualitas sebuah susu berdasarkan fitur-fitur tertentu?
@@ -49,7 +47,7 @@ Selanjutnya pemeriksaan fitur numerik, berikut histogram dari masing-masing fitu
 <br>![persebaran_data](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/persebaran_data.png)<br>
 
 dari gambar tersebut dapat ditarik beberapa hal:
-- Pada fitur pH, dapat dilihat bahwa bebrapa data terpusat pada antara pH 6 hingga pH 7.
+- Pada fitur pH, dapat dilihat bahwa beberapa data terpusat pada antara pH 6 hingga pH 7.
 - Pada fitur pH, terdapat sebagian kecil data memiliki nilai diatas 9. Hal ini dapat kita indikasikan sebagai outliers.
 - Pada fitur Temprature, banyak data memiliki temprature dibawah 50, dan terdapat beberapa data memiliki terletak jauh dari data lain yaitu dengan nilai temprature 90, hal itu dapat kita indikasikan sebagai outliers.
 - Fitur selanjutnya yang dapat diamati adalah fitur Colour, pada fitur colour data memiliki nilai yang variatif, namun dapat diamati bahwa terdapat sebuah data berada pada nilai colour 240, hal itu dapat diindikasikan sebagai outliers.
@@ -65,45 +63,46 @@ Dari ketiga gambar diatas dapat diketahui bahwa terdapat beberapa <i>outliers</i
 <br>![bloxplot](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/bloxplot.jpg)<br>
 
 Dengan menerapkan kode diatas, sampel pada dataset tersisa 648 sampel.
+
 <br>![jumlah_sampel](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/sampel.jpg)<br>
 
 
 ## Data Preparation
 
-Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiapkan sedimikian rupa. Ada beberapa metode yang dapat digunakan dalam tahap data preparation, metode yang akan digunakan dalam data preparation dalam proyek ini yaitu:
-- encoding pada label 
-  hal ini karena label memiliki tiga nilai yaitu low, medium, dan high. Hal ini dilakukan agar model dapat dengan mudah melakukan prediksi.
+Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiapkan sedemikian rupa. Ada beberapa metode yang dapat digunakan dalam tahap data preparation, metode yang akan digunakan dalam data preparation dalam proyek ini yaitu:
+- merubah niai pada label menjadi bentuk numerik 
+  hal ini karena label memiliki tiga nilai yaitu low, medium, dan high. Hal ini dilakukan agar model dapat dengan mudah melakukan prediksi. Fungsi yang digunakan pada tahap ini adalah fungsi <i>replace</i> dari library pandas
 - Pembagian dataset dengan menggunakan train_test_split
-  train_test_split merupakan fungsi dari library scikit-learn yang memiliki fitur untuk membagi data kedalam train data dan test data. Pembagian data ini diperlukan     agar model dapat diukur akurasinya.
+  train_test_split merupakan fungsi dari library scikit-learn yang memiliki fitur untuk membagi data kedalam train data dan test data. Pembagian data ini diperlukan     agar model dapat diukur akurasinya. Dengan proporsi pembagian antara data latih dan data tes sebesar 70 : 30.
 - Standarisasi
-  Standarisasi merupakan kegiatan merubah nilai pada dataset sehigga pada range tertentu. Range yang besar antar nilai pada dataset dapat menyulitkan model dalam mempelajari pada dataset. Fitur-fitur yang akan di-standarisasi yaitu pH, Temprature, dan Colour. Untuk fitur-fitur lain tidak dilakukan standirisasi karena nilainya 1 dan 0.
+  Standarisasi merupakan kegiatan merubah nilai pada dataset sehigga pada range tertentu. Range yang besar antar nilai pada dataset dapat menyulitkan model dalam mempelajari pada dataset. Fitur-fitur yang akan di-standarisasi yaitu pH, Temprature, dan Colour. Untuk fitur-fitur lain tidak dilakukan standirisasi karena nilainya 1 dan 0. Fungsi yang akan digunakan pada tahap ini adalah <i>StandardSCaler</i> dari library scikit-learn.
  
- ## Modeling
- Proyek ini memiliki fokus permasalahan pada indentifikasi kualitas susu, permasalah tersebut dalam machine learning digolongkan pada permasalah klasifikasi. Beberapa algoritma yang dapat dipakai yaitu KNN, Random Forest, dan AdaBoost. Selain itu untuk memaksimalkan hasil yang didapat, maka akan dilakukan hyperparameter tuning pada setiap model yang akan diuji.
+## Modeling
+Proyek ini memiliki fokus permasalahan pada indentifikasi kualitas susu, permasalah tersebut dalam <i>machine learning</i> digolongkan pada permasalahan klasifikasi. Beberapa algoritma yang dapat dipakai yaitu KNN, Random Forest, dan AdaBoost. Selain itu untuk memaksimalkan hasil yang didapat, maka akan dilakukan <i>hyperparameter tuning</i> pada setiap model yang akan diuji.
 
 ### Pemodelan KNN
-KNN merupakan algoritma machine learning yang bekerja dengan mencari "kesamaan fitur" dalam melakukan prediksi. berikut penjelasan kelebihan dan kekurangan dari KNN:
+KNN merupakan algoritma <i>machine learning</i> yang bekerja dengan mencari "kesamaan fitur" dalam melakukan prediksi. berikut penjelasan kelebihan dan kekurangan dari KNN:
 
 #### Kelebihan :
-- memiliki bentuk yang sederhana
-- mudah diimplementasikan
+- Memiliki bentuk yang sederhana
+- Mudah diimplementasikan
 
 #### Kekurangan :
-- tidak cocok untuk dataset besar
+- Tidak cocok untuk dataset besar
 
 #### Parameter :
 - n_neighbors = merupakan jumlah "tetangga" terdekat yang akan diklasifikasikan dalam satu kelompok. Diantara (5, 10, 15) menggunakan metode GridSearch didapat bahwa nilai terbaik untuk parameter ini adalah 5.
 
 ### Pemodelan Random Forest
-Random merupakan algoritma machine learning yang bekerja dengan menggabungkan beberapa Decision Tree dalam melakukan prediksi.  berikut penjelasan kelebihan dan kekurangan dari Random Forest:
+Random merupakan algoritma <i>machine learning</i> yang bekerja dengan menggabungkan beberapa DecisionTree dalam melakukan prediksi.  Berikut penjelasan kelebihan dan kekurangan dari Random Forest:
 
 #### Kelebihan :
-- ampuh dalam mengatasi noise 
-- mampu mengatasi missing value
-- dapat digunakan dalam data besar
+- Ampuh dalam mengatasi noise 
+- Mampu mengatasi missing value
+- Dapat digunakan dalam data besar
 
 #### Kekurangan :
-- membutuhkan tuning parameter yang tepat agar akurasi yang diharapkan dapat tercapai
+- Membutuhkan tuning parameter yang tepat agar akurasi yang diharapkan dapat tercapai
 
 #### Parameter :
 - n_estimator = jumlah decision tree. Diantara (5, 10, 15) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 15.
@@ -112,14 +111,14 @@ Random merupakan algoritma machine learning yang bekerja dengan menggabungkan be
 - n_jobs = jumlah pekerjaan yang berjalan dengan paralel. Diantara (1, 2, 3) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 1.
 
 ### Pemodelan AdaBoost 
-AdaBoost merupakan salah satu algoritma machine learning yang bekerja dengan cara "memperbaiki diri". Berikut penjelasan kelebihan dan kekurangan dari AdaBoost :
+AdaBoost merupakan salah satu algoritma <i>machine learning</i> yang bekerja dengan cara "memperbaiki diri". Berikut penjelasan kelebihan dan kekurangan dari AdaBoost :
 
 #### Kelebihan :
-- mudah diimplementasikan
-- relatif cepat dalam pengujian
+- Mudah diimplementasikan
+- Relatif cepat dalam pengujian
 
 #### Kekurangan :
-- membutuhkan dataset dengan akurasi tinggi
+- Membutuhkan dataset dengan akurasi tinggi
 
 #### Parameter :
 - learning_rate = weight pada setiap regressor tiap iterasi. Diantara (0.5, 0.05, 0.005) dengan menggunakan GridSearch didapat nilai yang terbaik untuk parameter adalah 0.5.
@@ -128,7 +127,7 @@ AdaBoost merupakan salah satu algoritma machine learning yang bekerja dengan car
 Setelah parameter setiap model didapat, maka akan dilakukan pelatihan ketiga model menggunakan parameter yang didapat menggunakan Grid Search.
 
 ## Evaluation
-Pada tahap evaluasi akan digunakan mean squre error untuk menghitung error prediksi kualitas susu dari model dengan kualitas susu sesuai data. Mean square error bekerja dengan menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Berikut formula dari mean square error
+Pada tahap evaluasi akan digunakan <i>mean square error</i> untuk menghitung error prediksi kualitas susu dari model dengan kualitas susu sesuai data. <i>Mean square error</i> bekerja dengan menghitung jumlah selisih kuadrat rata-rata nilai sebenarnya dengan nilai prediksi. Berikut formula dari mean square error
 
 <br>![formula](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/formula.jpeg)<br>
 
@@ -152,3 +151,6 @@ Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat
 ## Kesimpulan
 Dengan menerapkan beberapa metode, dari ketiga model yang telah diuji, Random Forest 
 merupakan model yang memiliki error paling rendah dan mampu memprediksi kualitas dari susu dengan tepat. Tujuan dari proyek dalam mengatasi permasalahan yang telah disebutkan telah dapat tercapai.
+
+## Referensi
+<div class="csl-entry">[1] Ernawati, S., &#38; Setyorini. D.A. DKK. (2018). <i>ualitas dan Kuantitas Produksi Susu Sapi di Kemitraan PT. Greenfields Indonesia Ditinjau dari Ketinggian Tempat</i>. https://ejournal.unib.ac.id/index.php/jspi/article/view/12295</div>
