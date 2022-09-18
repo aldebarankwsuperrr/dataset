@@ -54,12 +54,18 @@ dari gambar tersebut dapat ditarik beberapa hal:
 - Pada fitur Temprature, banyak data memiliki temprature dibawah 50, dan terdapat beberapa data memiliki terletak jauh dari data lain yaitu dengan nilai temprature 90, hal itu dapat kita indikasikan sebagai outliers.
 - Fitur selanjutnya yang dapat diamati adalah fitur Colour, pada fitur colour data memiliki nilai yang variatif, namun dapat diamati bahwa terdapat sebuah data berada pada nilai colour 240, hal itu dapat diindikasikan sebagai outliers.
 
-Selanjutnya adalah tahap memerikas <i>outliers</i>. Untuk memeriksa <i>outliers</i> pada dataset kita dapat melakukan beberapa hal. Salah satu metode yang dapat dilakukan dalam menangani <i>outliers</i> yaitu IQR. Metode IQR merupakan metode penanganan <i>outliers</i> dengan menerapkan batas atas dan batas bawah, kemudian data yang berada diluar batas atas dan batas bawah akan dianggap sebagai <i>outliers</i>. Karena hanya sebagian fitur pada dataset yang memiliki nilai yang variatif, maka pemeriksaan <i>outliers</i> hanya dilakukan pada fitur tersebut yaitu pH, Colour, dan Temprature. Berikut gambar boxplot IQR pada ketiga fitur
+Selanjutnya adalah tahap memerikas <i>outliers</i>. Untuk memeriksa <i>outliers</i> pada dataset kita dapat melakukan beberapa hal. Salah satu metode yang dapat dilakukan dalam menangani <i>outliers</i> yaitu IQR. Metode IQR merupakan metode penanganan <i>outliers</i> dengan menerapkan batas atas dan batas bawah, kemudian data yang berada diluar batas atas dan batas bawah akan dianggap sebagai <i>outliers</i>. Karena hanya sebagian fitur pada dataset yang memiliki nilai yang variatif, maka pemeriksaan <i>outliers</i> hanya dilakukan pada fitur tersebut yaitu pH, Colour, dan Temprature. Berikut gambar boxplot IQR pada ketiga fitur:
 
 ![ph](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/ph.png)
 ![colour](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/colour.png)
 ![temprature](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/download.png)
- 
+<br>
+Dari ketiga gambar diatas dapat diketahui bahwa terdapat beberapa <i>outliers</i> pada dataset, sehingg perlu dilakukan penanganan, berikut source code penganan <i>outliers</i> dengan menggunakan metode <i>Bloxpot Outliers</i>:
+
+<br>![bloxplot](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/bloxplot.jpg)<br>
+
+Dengan menerapkan kode diatas, sampel pada dataset tersisa 648 sampel.
+<br>![jumlah_sampel](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/sampel.jpg)<br>
 
 
 ## Data Preparation
