@@ -25,9 +25,18 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Temperature : Temperatur dari susu, variabel berisi nilai variatif diambil berdasarkan sampel
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
-Untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
+Untuk penjelasan lebih rinci pada dataset dapat dilihat pada tabel berikut
 
-<br>![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
+|   Column   | Non-Null Count |  Dtype  |
+|:----------:|:--------------:|:-------:|
+|     PH     |  1059 non-null | float64 |
+| Temprature |  1059 non-null |  int64  |
+|    Taste   |  1059 non-null |  int64  |
+|    Odor    |  1059 non-null |  int64  |
+|     Fat    |  1059 non-null |  int64  |
+|  Turbidity |  1059 non-null |  int64  |
+|   Colour   |  1059 non-null |  int64  |
+|    Grade   |  1059 non-null |  int64  |
 
 Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe number baik int maupun float, dan satu kolom dengan tipe object yaitu Grade, Grade merupakan label pada dataset ini.
 
