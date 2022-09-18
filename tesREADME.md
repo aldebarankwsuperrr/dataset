@@ -134,7 +134,11 @@ y_pred = nilai prediksi <br>
 
 Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
 
-<br>![eval](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/e2.jpg)<br>
+|index|train|test|
+|---|---|---|
+|KNN|0.000008|0.000023|
+|RF|0.000002|0.00003|
+|Boosting|0.000059|0.00011|
 
 Berikut visualisasi dari tabel diatas
 
