@@ -42,6 +42,8 @@ Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe numb
 
 Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value</i>. Dalam memeriksa <i>missing value</i> pada dataset, kita dapat menggunakan fungsi <i>isnull()</i> Berikut tabel yang berisi jumlah <i>missing value</i> pada tiap fitur
 
+|index|jumlah|
+|---|---|
 |pH|0|
 |Temprature|0|
 |Taste|0|
@@ -51,9 +53,7 @@ Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value
 |Colour|0|
 |Grade|0|
 
-<br>![mising](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/missing.jpg)<br>
-
-Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value</i> pada dataset.
+Dari tabel diatas dapat dilihat bahwa tidak terdapat <i>missing value</i> pada dataset.
   
 Syarat dari dataset yang baik untuk digunakan dalam pembuatan model machine learning salah satunya haruslah seimbang. Salah satu cara memeriksa apakah dataset kita seimbang atau tidak adalah dengan melakukan visualisasi. Berikut visualiasi dari dataset susu yang akan digunakan pada pembuatan model machine learning proyek ini.
 
