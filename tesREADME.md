@@ -146,7 +146,17 @@ Berikut visualisasi dari tabel diatas
 
 Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat diuji dengan data test. Dari diagram tersebut dapat dilihat bahwa KNN memiliki error paling rendah pada test set walaupun pada training set bukan error yang terendah. Maka KNN akan digunkan pada proyek ini dalam menentukan kualitas dari susu berdasarkan fitur pH, Temprature, dan lain-lain. Berikut sebagian kecil cuplikan dari test set
 
-<br>![hasil_predict](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/h.jpg)<br>
+|index|y\_true|prediksi\_KNN|prediksi\_RF|prediksi\_Boosting|
+|---|---|---|---|---|
+|141|3|3\.0|3\.0|2\.9|
+|645|3|3\.0|3\.0|2\.6|
+|85|3|3\.0|3\.0|2\.9|
+|806|2|2\.0|2\.0|2\.3|
+|310|3|3\.0|3\.0|2\.9|
+|552|3|2\.6|3\.0|2\.4|
+|348|2|2\.0|2\.0|2\.0|
+|522|2|2\.0|2\.0|2\.5|
+|889|3|3\.0|3\.0|2\.9|
 
 ## Kesimpulan
 Dengan menerapkan beberapa metode, dari ketiga model yang telah diuji, KNN
