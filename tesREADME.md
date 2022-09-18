@@ -29,7 +29,7 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 
 Untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
 
-Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value<i>. Berikut kode yang disertai gambar yang menunjukkan jumlah <i>missing value<i> pada dataset
+Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value</i>. Berikut kode yang disertai gambar yang menunjukkan jumlah <i>missing value</i> pada dataset
  
   
 <br>![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
