@@ -58,11 +58,7 @@ Selanjutnya adalah tahap memerikas <i>outliers</i>. Untuk memeriksa <i>outliers<
 ![colour](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/colour.png)
 ![temprature](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/download.png)
 <br>
-Dari ketiga gambar diatas dapat diketahui bahwa terdapat beberapa <i>outliers</i> pada dataset, sehingg perlu dilakukan penanganan, berikut source code penganan <i>outliers</i> dengan menggunakan metode <i>Bloxpot Outliers</i>:
-
-<br>![bloxplot](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/bloxplot.jpg)<br>
-
-Dengan menerapkan kode diatas, sampel pada dataset tersisa 648 sampel.
+Dari ketiga gambar diatas dapat diketahui bahwa terdapat beberapa <i>outliers</i> pada dataset, sehingg perlu dilakukan penanganan, dengan menerapkan <i>Bloxpot IQR</i> maka sampel pada dataset tersisa 648 sampel.
 
 <br>![jumlah_sampel](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/sampel.jpg)<br>
 
