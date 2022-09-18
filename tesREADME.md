@@ -35,7 +35,7 @@ Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value
 <br>![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
 Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe number baik int maupun float, dan satu kolom dengan tipe object yaitu Grade, Grade merupakan label pada dataset ini.
 
-<br>[mising](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/missing.jpg)<br>
+<br>![mising](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/missing.jpg)<br>
  
 Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value</i> pada dataset.
   
