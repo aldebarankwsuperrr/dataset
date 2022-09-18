@@ -138,18 +138,18 @@ y_pred = nilai prediksi <br>
 
 Karena sebelumnya kita melakukan standarisasi pada data train, maka pada tahap evaluasi kita juga harus melakukan standariasi pada data test dalam menguji model. Berikut hasil evaluasi yang didapat dari ketiga model yang telah dilatih
 
-<br>![eval](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/eval2.jpg)<br>
+<br>![eval](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/e2.jpg)<br>
 
 Berikut visualisasi dari tabel diatas
 
-<br>![evaluation](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/eval.png)<br>
+<br>![evaluation](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/e.png)<br>
 
-Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat diuji dengan data test. Dari diagram tersebut dapat dilihat bahwa Random Forest memiliki error paling rendah, baik pada training set maupun test set. Maka Random Forest akan digunkan pada project ini dalam menentukan kualitas dari susu berdasarkan fitur pH, Temprature, dan lain-lain. Berikut sebagian kecil cuplikan dari test set
+Diagram batang diatas merupakan jumlah error yang didapat setiap model pada saat diuji dengan data test. Dari diagram tersebut dapat dilihat bahwa KNN memiliki error paling rendah pada test set walaupun pada training set bukan error yang terendah. Maka KNN akan digunkan pada proyek ini dalam menentukan kualitas dari susu berdasarkan fitur pH, Temprature, dan lain-lain. Berikut sebagian kecil cuplikan dari test set
 
-<br>![hasil_predict](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/hasil_predict.jpg)<br>
+<br>![hasil_predict](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/h.jpg)<br>
 
 ## Kesimpulan
-Dengan menerapkan beberapa metode, dari ketiga model yang telah diuji, Random Forest 
+Dengan menerapkan beberapa metode, dari ketiga model yang telah diuji, KNN
 merupakan model yang memiliki error paling rendah dan mampu memprediksi kualitas dari susu dengan tepat. Tujuan dari proyek dalam mengatasi permasalahan yang telah disebutkan telah dapat tercapai.
 
 ## Referensi
