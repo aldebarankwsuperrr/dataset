@@ -39,7 +39,11 @@ Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value</i> pada 
   
 Syarat dari dataset yang baik untuk digunakan dalam pembuatan model machine learning salah satunya haruslah seimbang. Salah satu cara memeriksa apakah dataset kita seimbang atau tidak adalah dengan melakukan visualisasi. Berikut visualiasi dari dataset susu yang akan digunakan pada pembuatan model machine learning proyek ini.
 
-<br>![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
+| Grade  | Jumlah Sampel | Presentase |  
+|--------|---------------|------------|
+| Low    |      429      |    40.5    |   
+| Medium |      374      |    35.3    |   
+| High   |      256      |    24.2    |  
 
 Pada gambar diatas dapat dilihat bahwa dataset memiliki persebaran data yang cukup seimbang pada setiap nilai target, sehingga dataset susu dapat digunakan. 
 
