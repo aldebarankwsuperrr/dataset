@@ -64,9 +64,6 @@ Selanjutnya adalah tahap memerikas <i>outliers</i>. Untuk memeriksa <i>outliers<
 <br>
 Dari ketiga gambar diatas dapat diketahui bahwa terdapat beberapa <i>outliers</i> pada dataset, sehingg perlu dilakukan penanganan, dengan menerapkan <i>Bloxpot IQR</i> maka sampel pada dataset tersisa 648 sampel.
 
-<br>![jumlah_sampel](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/sampel.jpg)<br>
-
-
 ## Data Preparation
 
 Untuk membuat dataset lebih mudah dipahami oleh model, maka dataset harus disiapkan sedemikian rupa. Ada beberapa metode yang dapat digunakan dalam tahap data preparation, metode yang akan digunakan dalam data preparation dalam proyek ini yaitu:
