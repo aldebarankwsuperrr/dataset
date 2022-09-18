@@ -14,7 +14,7 @@ Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi ku
 - Bagaimana cara membuat model machine learning dengan akurasi tinggi dalam mengidentifikasi kualitas susu berdasarkan fitur-fitur tertentu?
 
 Dalam menyelesaikan permasalahan tersebut, dibuatlah sebuah <i>predictive model<i> dengan tujuan unntuk mengetahui kualitas susu berdasarkan fitur-fitur tertentu dengan menggunakan <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> dataset </a> dengan jumlah sampel 1059 data. Dalam membuat model machine learning, akan digunakan 3 model berbeda dengan menerapkan hyperparameter tuning pada setiap modelnya, kemudian akurasi pada tiap model akan diukur menggunakan  metode mean square error, model dengan error paling rendah akan diambil sebagai model utama.
-
+  
 ## Data Understanding
 <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality">Dataset</a> yang digunakan pada proyek ini diambil dengan manual dengan metode observasi. Target yang digunakan adalah kolom 'Grade' dengan tiga nilai yaitu low, medium, dan High.
 
@@ -27,11 +27,18 @@ Variabel-variabel pada dataset susu adalah sebagai berikut :
 - Temperature : Temperatur dari susu, variabel berisi nilai variatif diambil berdasarkan sampel
 - Colour      : warna dari susu, variabel berisi nilai variatif diambil berdasarkan sampel. 
 
-untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
+Untuk penjelasan lebih rinci pada dataset dapat dilihat pada gambar berikut
 
+Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value<i>. Berikut kode yang disertai gambar yang menunjukkan jumlah <i>missing value<i> pada dataset
+ 
+  
 <br>![info](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/info.jpg)<br>
 Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe number baik int maupun float, dan satu kolom dengan tipe object yaitu Grade, Grade merupakan label pada dataset ini.
 
+<br>[mising](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/missing.jpg)<br>
+ 
+Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value<i> pada dataset.
+  
 Syarat dari dataset yang baik untuk digunakan dalam pembuatan model machine learning salah satunya haruslah seimbang. Salah satu cara memeriksa apakah dataset kita seimbang atau tidak adalah dengan melakukan visualisasi. Berikut visualiasi dari dataset susu yang akan digunakan pada pembuatan model machine learning proyek ini.
 
 <br>![grade](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/grade.png)<br>
@@ -46,9 +53,14 @@ dari gambar tersebut dapat ditarik beberapa hal:
 - Pada fitur pH, terdapat sebagian kecil data memiliki nilai diatas 9. Hal ini dapat kita indikasikan sebagai outliers.
 - Pada fitur Temprature, banyak data memiliki temprature dibawah 50, dan terdapat beberapa data memiliki terletak jauh dari data lain yaitu dengan nilai temprature 90, hal itu dapat kita indikasikan sebagai outliers.
 - Fitur selanjutnya yang dapat diamati adalah fitur Colour, pada fitur colour data memiliki nilai yang variatif, namun dapat diamati bahwa terdapat sebuah data berada pada nilai colour 240, hal itu dapat diindikasikan sebagai outliers.
-- variasi nilai pada fitur-fitur dataset tidak terdapat nilai yang "rancu", sehingga kita dapat simpulkan tidak terdapat missing value pada dataset.
 
-Untuk menangani outliers pada dataset kita dapat melakukan beberapa hal. Jika data yang outliers memiliki presentase kecil terhadap data, maka kita dapat menghilangkan saja data tersebut, agar model dapat memiliki akurasi yang tinggi. Seperti yang kita ketahui pada pemeriksaan fitur numerik, terdapat beberapa fitur memiliki outliers dengan presentase terhadap dataset sangat kecil, sehingga akan dilakukan penghapusan pada data tersebut.
+Selanjutnya adalah tahap memerikas <i>outliers</i>. Untuk memeriksa <i>outliers</i> pada dataset kita dapat melakukan beberapa hal. Salah satu metode yang dapat dilakukan dalam menangani <i>outliers</i> yaitu IQR. Metode IQR merupakan metode penanganan <i>outliers</i> dengan menerapkan batas atas dan batas bawah, kemudian data yang berada diluar batas atas dan batas bawah akan dianggap sebagai <i>outliers</i>. Karena hanya sebagian fitur pada dataset yang memiliki nilai yang variatif, maka pemeriksaan <i>outliers</i> hanya dilakukan pada fitur tersebut yaitu pH, Colour, dan Temprature. Berikut gambar boxplot IQR pada ketiga fitur
+
+![ph](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/ph.png)
+![colour](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/colour.png)
+![temprature](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/download.png)
+ 
+
 
 ## Data Preparation
 
