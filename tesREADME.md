@@ -40,7 +40,7 @@ Untuk penjelasan lebih rinci pada dataset dapat dilihat pada tabel berikut
 
 Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe number baik int maupun float, dan satu kolom dengan tipe object yaitu Grade, Grade merupakan label pada dataset ini.
 
-Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value</i>. Dalam memeriksa <i>missing value</i> pada dataset, kita dapat menggunakan fungsi <i>isnull()</i> Berikut tabel yang berisi jumlah <i>missing value</i> pada tiap fitur
+Setelah memahami dataset, tidak lupa juga melakukan pemeriksaan <i>missing value</i>. Dalam memeriksa <i>missing value</i> pada dataset, kita dapat menggunakan fungsi <i>isnull()</i>. Berikut tabel yang berisi jumlah <i>missing value</i> pada tiap fitur
 
 |index|jumlah|
 |---|---|
