@@ -13,7 +13,7 @@ Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi ku
 - Apa kualitas sebuah susu berdasarkan fitur-fitur tertentu?
 - Bagaimana cara membuat model machine learning dengan akurasi tinggi dalam mengidentifikasi kualitas susu berdasarkan fitur-fitur tertentu?
 
-Dalam menyelesaikan permasalahan tersebut, dibuatlah sebuah predictive model dengan tujuan unntuk mengetahui kualitas susu berdasarkan fitur-fitur tertentu dengan menggunakan <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> dataset </a> dengan jumlah sampel 1059 data. Dalam membuat model machine learning, akan digunakan 3 model berbeda dengan menerapkan hyperparameter tuning pada setiap modelnya, kemudian akurasi pada tiap model akan diukur menggunakan  metode mean square error, model dengan error paling rendah akan diambil sebagai model utama.
+Dalam menyelesaikan permasalahan tersebut, dibuatlah sebuah <i>predictive model<i> dengan tujuan unntuk mengetahui kualitas susu berdasarkan fitur-fitur tertentu dengan menggunakan <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> dataset </a> dengan jumlah sampel 1059 data. Dalam membuat model machine learning, akan digunakan 3 model berbeda dengan menerapkan hyperparameter tuning pada setiap modelnya, kemudian akurasi pada tiap model akan diukur menggunakan  metode mean square error, model dengan error paling rendah akan diambil sebagai model utama.
 
 ## Data Understanding
 <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality">Dataset</a> yang digunakan pada proyek ini diambil dengan manual dengan metode observasi. Target yang digunakan adalah kolom 'Grade' dengan tiga nilai yaitu low, medium, dan High.
