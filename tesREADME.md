@@ -37,7 +37,7 @@ Dari gambar diatas dapat dilihat bahwa dataset memiliki 7 kolom dengan tipe numb
 
 <br>[mising](https://raw.githubusercontent.com/aldebarankwsuperrr/dataset/main/missing.jpg)<br>
  
-Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value<i> pada dataset.
+Dari gambar diatas dapat dilihat bahwa tidak terdapat <i>missing value</i> pada dataset.
   
 Syarat dari dataset yang baik untuk digunakan dalam pembuatan model machine learning salah satunya haruslah seimbang. Salah satu cara memeriksa apakah dataset kita seimbang atau tidak adalah dengan melakukan visualisasi. Berikut visualiasi dari dataset susu yang akan digunakan pada pembuatan model machine learning proyek ini.
 
