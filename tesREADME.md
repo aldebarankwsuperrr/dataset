@@ -7,7 +7,7 @@ Susu merupakan salah satu bahan makanan tertua di dunia. Sejak 8.000 tahun sebel
 Oleh karena itu diperlukan adanya sebuah pengklasifikasian yang dapat membedakan antara susu yang baik dan layak dikonsumsi dengan susu yang mengalami kerusakan dan tidak layak dikonsumsi. Kualitas susu dapat diidentifikasi dari berbagai macam hal, mulai dari pH, temperatur, warna, dan lain-lain[1]. Pada proyek ini akan dibuat sebuah model machine learning yang dapat mendeteksi kualitas susu berdasarkan dataset susu yang dapat dikunjungi <a href="https://www.kaggle.com/datasets/cpluzshrijayan/milkquality"> disini </a>.
 
 ## Business Understanding
-Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi kualitas susu juga dapat membuat kekeliruan dalam menentukan harga jual susu. Susu dengan kualitas tinggi tentu memiliki harga jual lebih tinggi dibandingkan dengan susu dengan kualitas buruk. Dari pernyataan tersebut, dapat ditarik kesimpulan bahwa permasalahan utama dapat dinyatakan dengan sebuah pertanyaan-pertanyaan berikut:
+Selain ancaman bahaya kesehatan untuk tubuh, kesalahan dalam mengidentifikasi kualitas susu juga dapat membuat kekeliruan dalam menentukan harga jual susu. Susu dengan kualitas tinggi tentu memiliki harga jual lebih tinggi dibandingkan dengan susu dengan kualitas buruk. Dari pernyataan tersebut, dapat ditarik kesimpulan bahwa permasalahan utama dapat dinyatakan dengan sebuah pertanyaan berikut:
 - Bagaimana cara membuat model machine learning dengan akurasi tinggi dalam mengidentifikasi kualitas susu berdasarkan fitur-fitur tertentu?
 
 Dalam menyelesaikan permasalahan tersebut, berikut beberapa solusi yang akan dilakukan pada proyek ini:
